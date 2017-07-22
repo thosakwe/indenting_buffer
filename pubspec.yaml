@@ -1,0 +1,9 @@
+name: indenting_buffer
+version: 1.0.0
+description: A StringBuffer derivative that supports identation.
+author: Tobe O <thosakwe@gmail.com>
+homepage: https://github.com/thosakwe/indenting_buffer
+dependencies:
+  charcode: ">1.0.0 <=2.0.0"
+dev_dependencies:
+  test: ">=0.12.0 <0.13.0"
