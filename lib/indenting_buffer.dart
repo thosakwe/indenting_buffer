@@ -7,7 +7,7 @@ class IndentingBuffer implements StringBuffer {
   String _cache;
   int _level = 0;
 
-  /// The [String] used to write newlines. Default: `'\r\n'`.
+  /// The [String] used to write newlines. Default: `'\n'`.
   String newline;
 
   /// The [String] used to indent text. Default: `'  '`.
@@ -15,7 +15,7 @@ class IndentingBuffer implements StringBuffer {
 
   IndentingBuffer({this.space, this.newline}) {
     space ??= '  ';
-    _crlf = newline?.codeUnits ?? [$cr, $lf];
+    _crlf = newline?.codeUnits ?? [$lf];
   }
 
   /// The level of indentation this buffer is currently set to.

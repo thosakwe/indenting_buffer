@@ -10,7 +10,7 @@ main() {
     js.outdent().writeln('}');
     print(js);
     expect(js.toString(),
-        'function main() {\r\n  var x = "Hello, world!";\r\n  window.alert(x);\r\n}\r\n');
+        'function main() {\n  var x = "Hello, world!";\n  window.alert(x);\n}\n');
   });
 
   test('outdent limit', () {
